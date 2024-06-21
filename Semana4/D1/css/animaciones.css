@@ -1,0 +1,115 @@
+.texto-animado{
+    border: solid;
+    color: #ccc;
+    animation-name: texto-volador;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+@keyframes texto-volador{
+    from{
+       /* margin-left: 100%; */
+        width: 300px;
+        background-color: aqua;
+        border: solid red;
+    }
+    to{
+        margin-left: 100%;
+        background-color: rebeccapurple;
+        width: 200px;
+        height: 200px;
+
+    } 
+}
+
+.resize{
+    border: solid;
+    animation-name: redimensionado;
+    animation-duration: 10s;
+    animation-iteration-count: 4;
+}
+
+@keyframes redimensionado{
+    from{
+        width: 500px;
+    }
+    to{
+        width: 100px;
+    }
+}
+
+.box{
+    border: solid blueviolet;
+    animation-name: cambia-color;
+    animation-duration: 5s;
+}
+
+@keyframes cambia-color{
+    from{
+        color: #000;
+        background-color: #ccc;
+    }
+    to{
+        color: #ccc;
+        background-color: #000;
+    }
+}
+
+/* colore */
+
+.box1{
+    width: 200px;
+    height: 200px;
+    border: solid;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: colores;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colores{
+    0%{
+        background-color: brown;
+    }
+    25%{
+        background-color: blue
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color:  green;
+    }  
+    100%{
+        background-color: red;
+    }
+}
+
+.change-fig{
+    width: 280px;
+    height: 150px;
+    border: solid;
+    background-image: url(./fig1.jfif);
+    animation-name: figura;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes figura{
+    0%{
+       background-image: url(./fig1.jfif)
+    }
+    25%{
+        background-image: url(./fig2.jfif)
+    }
+    50%{
+        background-image: url(./fig3.jfif)
+    }
+    75%{
+        background-image: url(./fig4.jfif)
+    }  
+    100%{
+        background-image: url(./fig5.jfif)
+    }
+}

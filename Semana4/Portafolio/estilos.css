@@ -1,0 +1,95 @@
+@import url('./normalize.css');
+
+body{
+    color: rgb(244,244,244);
+    font-family: 'Candara';
+}
+
+aside{
+    width: 400px;
+    background-color: rgb(34, 32, 32);
+    height: 100vh;
+}
+
+aside img {
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid rgb(146, 146, 146);
+    animation: fondo infinite 3s
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    height: 100%;
+   /* background-color: red;*/
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.link {
+    background-color: rgb(54, 54, 54);
+    width: 320px;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: background-color .2s;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.link:hover {
+    background-color: rgba(221, 18, 170, 0.856);
+    font-size: 22px;
+    transition: 0.5s ease-out;
+}
+
+@keyframes fondo_base { 
+    0% {
+        box-shadow: 0 10px 30px -10px white;
+    }
+
+    50% {
+        box-shadow: 0 10px 30px -10px rgba(236, 112, 236, 0.959);
+    }
+
+    100% {
+        box-shadow: 0 10px 30px -10px rgba(236, 7, 236, 0.342)
+    }
+}
+
+@keyframes fondo { 
+    0% {
+        box-shadow: 10px -10px 10px -10px white;
+    }
+
+    35% {
+        box-shadow: -35px -20px 20px -20px rgba(236, 112, 236, 0.959);
+    }
+
+    70% {
+        box-shadow: -35px -20px 20px -20px rgba(199, 29, 199, 0.959);
+    }
+
+    100% {
+        box-shadow: 10px -25px 10px -25px rgba(236, 7, 236, 0.342)
+    }
+}
