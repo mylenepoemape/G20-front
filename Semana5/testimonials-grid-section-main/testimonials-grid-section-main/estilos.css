@@ -1,0 +1,90 @@
+/* Barlow Semi Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    min-height: 100vh;
+    align-content: center;
+    background-color: var(--light-grayish-blue);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 'large large small tall'
+                         'small2 large2 large2 tall';
+    gap: 2em;
+}
+
+.caja {
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.author {
+    padding: 1em;
+    flex-direction: column;
+}
+
+.foto {
+    border-radius: 100%;
+}
+
+.nombre {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* daniel */
+.caja:nth-child(1) {
+    background-color: var(--moderate-violet);
+    grid-area: large;
+}
+
+/* jonathan */
+.caja:nth-child(2) {
+    background-color: var(--very-dark-grayish-blue);
+    grid-area: small;
+}
+
+.caja:nth-child(3) {
+    grid-area: small2;
+}
+
+.caja:nth-child(4) {
+    background-color: var(--very-dark-blackish-blue);
+    grid-area: large2;
+}
+
+/* jeanette */
+.caja:nth-child(3), .caja:nth-child(5) {
+    background-color: var(--white);
+}
+
+.caja:nth-child(5) {
+    grid-area: tall;
+}
